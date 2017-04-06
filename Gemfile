@@ -12,7 +12,7 @@ gem 'rails', '~> 5.0.2'
 gem 'coffee-rails'
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem 'puma'
 
 gem 'turbolinks'
 
