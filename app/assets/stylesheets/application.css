@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Slabo 13px', serif;
+  font-size:24px;
+}
+
+/* Header */
+#header {
+  width: 100%;
+  margin: 35px 0 45px 35px;
+}
+
+#nameID {
+  display: inline;
+  width: 160px;
+  height: 44px;
+  font-size: 34px;
+}
+
+/* Form */
+
+.form-inline .form-control {
+  margin: 5px;
+  width: 175px;
+  display: block;
+  margin: 15px auto;
+}
+
+#submitButton {
+  display: inline-block;
+  position: relative;
+  left: 50px;
+}
+
+.text-center>h2 {
+  margin-bottom: 30px;
+}
+
+/* Table */
+
+.table {
+  width: 70%;
+  margin: 25px auto 0;
+}
+
+.table-striped>tbody>tr:nth-of-type(even){
+  background-color: #e4e4e4;
+}
+
+tbody>tr>td>p{
+  padding-left:20px;
+  margin-top:10px;
+}
+
+.btn-info {
+  margin: 0 8px 0 0;
+}
+
+#buttonItemHolder {
+  padding: 13px 0 8px 4px;
+}
+
+#arrowPrintButtonHolder {
+  display: block;
+  width: 50%;
+  margin: 20px auto;
+  position: relative;
+  left: 25%;
+  width: 20%;
+}
+
+.glyphicon-arrow-down {
+  display: table;
+  position: relative;
+  margin: 0 auto 20px;
+  right: 1%;
+  font-size:90px;
+  color: rgb(104, 94, 214);
+}
+
+#printWishList {
+  display: block;
+  position: relative;
+}
+
+
+/* Print Page */
+
+.col-md-9, .col-md-3 {
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  padding: 30px 0 30px 20px;
+}
+
+.col-md-3{
+  border-bottom: none;
+}
+
+.col-md-12>h1 {
+  margin-top: 10px;
+}
+
+#totalCost {
+  margin: 130px 0 0 0;
+  float: right;
+}
+
+#backToWishList {
+  margin: 0 0 20px 0;
+}
+
+
+
+@media (max-width: 692px) {
+  .form-inline {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .form-control {
+    display: block;
+    margin: 0 auto;
+  }
+}
